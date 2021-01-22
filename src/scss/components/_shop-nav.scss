@@ -1,0 +1,57 @@
+.shop-nav__user{
+	position: inherit;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+}
+
+use.nav-user {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+}
+
+button.shop-nav__btn {
+	position: inherit;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 20px;
+
+}
+
+use.nav-search {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+}
+.shop-nav__cart{
+		position: inherit;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	padding: 0px 9px;
+}
+use.nav-cart {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+}
+.cart__quantity.quantity{
+	background-color: $dark;
+	color:$white;
+	width: 30px;
+	height: 20px;
+	border-radius: 50%;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 0px 5px;
+}

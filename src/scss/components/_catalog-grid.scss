@@ -1,0 +1,385 @@
+.container.container-narrow {
+	display: flex;
+}
+
+.catalog-grid {
+	padding-top: 19px;
+	padding-bottom: 50px;
+	position: relative;
+	top: 0;
+	left: 0;
+	max-width: 1920px;
+	width: 100%;
+	max-height: 1135px;
+	overflow: hidden;
+
+}
+
+.catalog-grid__props {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.catalog-props {
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 25px;
+		select {
+display: block;
+		}
+	}
+}
+.catalog-select{
+	position: relative;
+	top: 0;
+	right: 0;
+	max-width: 122px;
+	width: 100%;
+	height: 30px;
+	border: none;
+	color: $gray;
+}
+.catalog-select__text{
+	position: absolute;
+	top: -15px;
+	left: 0;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 16px;
+	text-align: left;
+	color: $gray;
+}
+.catalog-props__top {
+	position: relative;
+	top: 0;
+	left: 0;
+
+}
+
+.catalog-colums.tab {
+	display: flex;
+	align-items: center;
+	font-size: 10px;
+	color: $black;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 19px;
+	text-align: left;
+
+	&__text {
+		margin-right: 12px;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		padding: 5px 12px;
+
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+	}
+
+	&__btn {
+		position: relative;
+		top: 0;
+		left: 0;
+		font-size: 10px;
+		color: $gray;
+
+		&::after {
+			position: absolute;
+			content: "";
+			display: block;
+			width: 40px;
+			height: 40px;
+			background-color: $dark;
+		}
+
+		&:hover {
+			width: 40px;
+			height: 40px;
+			font-size: 11px;
+			color: $dark;
+		}
+	}
+}
+.catalog-props__choice.catalog-choice {
+	display: flex;
+	font-size: 0;
+
+}
+
+.catalog-choice {
+	display: flex;
+	flex-direction: row;
+
+	&__item {
+		border-radius: 12px;
+		background-color: $glass;
+		padding: 5px 12px;
+		color: $dark;
+		font-size: 13px;
+		font-weight: 500;
+		transition: background-color 0.3s, color 0.3s;
+	}
+
+	&__clear {
+		border-radius: 12px;
+		background-color: $dark;
+		padding: 5px 12px;
+		color: $white;
+		font-size: 13px;
+		font-weight: 500;
+		cursor: pointer;
+		transition: background-color 0.3s, color 0.3s;
+	}
+	&__cleans {
+		position: relative;
+		display: block;
+		top: 0;
+		left: 0;
+		border-radius: 12px;
+		color: $dark;
+		padding: 5px 12px;
+		font-size: 13px;
+		font-weight: 500;
+		cursor: pointer;
+		transition: background-color 0.3s, color 0.3s;
+		&::after {
+			position: absolute;
+			bottom: 5px;
+			left: 18%;
+			display: block;
+			content: "";
+			width: 50px;
+			height: 2px;
+			background-color: $dark;
+		}
+		&:hover {
+			background-color: $dark;
+			color: $white;
+			&:after {
+				background-color: $white;
+				transition: background-color 0.3s;
+			}
+		}
+	}
+}
+button.catalog-choice__item {
+	display: flex;
+	color: $dark;
+	background-color: $glass;
+	border-radius: 12px;
+	padding: 5px 20px 5px 12px;
+	font-size: 13px;
+	font-weight: 500;
+	transition: background-color 0.3s, color 0.3s;
+
+	svg {
+		display: inline-block;
+		width: 8px;
+		height: 9px;
+		fill: currentColor;
+		pointer-events: none;
+		stroke: $dark;
+		color: $dark;
+	}
+
+	&:hover {
+		background-color: $dark;
+		stroke: $white;
+		color: $white;
+		transition: background-color 0.3s, color 0.3s;
+	}
+}
+
+button.btn-reset.catalog-choice__clear {
+	display: flex;
+	color: $white;
+	background-color: $dark;
+	border-radius: 12px;
+	padding: 5px 25px 0px 12px;
+
+	font-size: 13px;
+	font-weight: 500;
+	transition: background-color 0.3s, color 0.3s;
+	svg {
+		display: inline-block;
+		margin-left: 5px;
+		width: 8px;
+		height: 9px;
+		fill: currentColor;
+		pointer-events: none;
+		stroke: $white;
+		color: $white;
+	}
+
+	&:hover {
+		border-radius: 12px;
+		background-color: $glass;
+		padding: 5px 25px 0px 12px;
+		stroke: $dark;
+		color: $dark;
+		fill: $dark;
+		font-size: 13px;
+		font-weight: 500;
+	}
+}
+
+.catalog-choice__icon-close {
+	position: relative;
+	top: 2px;
+	right: -15px;
+	width: 8px;
+	height: 9px;
+}
+
+use.catalog-choice__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 8px;
+	height: 9px;
+}
+ul.catalog-grid__content {
+	display: grid;
+	position: relative;
+	top: 0;
+	left: 0;
+	max-width: 1920px;
+	width: 100%;
+	grid-template-columns: repeat(4, [col] 1fr);
+	grid-template-rows: repeat(3, [row] 1fr);
+
+}
+li.catalog-grid__item {
+	position: relative;
+}
+
+.catalog-grid__card {
+	margin-bottom: 23px;
+}
+.catalog-grid-images {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 205px;
+	width: 100%;
+	max-height: 280px;
+	padding: 10px;
+}
+h3.catalog-grid-title {
+	padding: 20px 0px 0px 10px;
+	position: relative;
+	top: 0;
+	left: 0;
+	font-size: 13px;
+	color: $gray;
+	line-height: 19px;
+	text-align: left;
+}
+.catalog-grid-title a {
+	text-decoration: none;
+	color: $gray;
+}
+span.catalog-grid-price {
+	font-size: 13px;
+	color: $dark;
+	font-weight: bold;
+	line-height: 19px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.tablinks {
+	position: relative;
+	top: 0;
+	left: 0;
+	padding: 0px 20px 0px 20px;
+  font-size: 10px;
+  font-family: "Jost";
+  color: $glass;
+  font-weight: bold;
+  line-height: 19px;
+	text-align: center;
+	margin: 0px;
+
+	.active:after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		content: "\2796";
+		background-color: $dark;
+	}
+}
+.catalog-grid__button {
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	height: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: $body;
+
+}
+.catalog-grid__text {
+	position: relative;
+	top: 0;
+	left: 0;
+	font-size: 10px;
+	font-family: "Jost";
+	color: $gray;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 19px;
+	text-align: left;
+	&::after {
+		position: absolute;
+		top: -5px;
+		right: -15px;
+		display: block;
+		content: ">";
+		color: $black;
+		font-size: 14px;
+	}
+}
+.catalog-grid__list.tab {
+	padding: 0px 30px 0px 15px;
+}
+
+a.catalog-grid__btn-link{
+	cursor: pointer;
+	color: $gray;
+	text-decoration: none;
+}
+
+.tablinks.active {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	background-color: $dark;
+	text-align: center;
+	transition: all.0.6s linear;
+	&:after {
+		position: absolute;
+		bottom: -10px;
+		left: 15px;
+		font-size: 0;
+		&:hover{
+	width: 40px;
+	height: 40px;
+	background-color: $dark;
+		}
+	}
+}

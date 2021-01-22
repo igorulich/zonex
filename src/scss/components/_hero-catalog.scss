@@ -1,0 +1,149 @@
+.hero {
+	//	background-color: $dark;
+
+	&-catalog {
+		// .hero-catalog__container
+
+		&__container {
+		position: relative;
+		}
+
+		// .hero-catalog__slide
+
+		&__slide {
+			overflow: hidden;
+			width: 100%;
+
+		}
+	}
+}
+
+.container {
+	// .container-narrow
+
+	&-narrow {
+		padding: 0px;
+
+	}
+}
+
+.carousel-inner.hero__carousel-inner {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-height: 380px;
+	height: 100%;
+}
+
+.hero__carousel-item {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.carousel-item-next,
+.carousel-item-prev,
+ .carousel-item.active {
+   &:after {
+    display: none;
+}
+
+}
+
+.carousel-control-prev.hero-control-prev{
+	position: absolute;
+	top: 42%;
+	left: 3%;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	z-index: 104;
+}
+
+.carousel-control-next.hero-control-next{
+	position: absolute;
+	top: 42%;
+	right: 5%;
+		width: 40px;
+	height: 40px;
+	cursor: pointer;
+	z-index: 104;
+}
+.logo__icon.hero__icon{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+}
+use.hero-arrow{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+img.hero__carousel {
+	position: absolute;
+	right: 14%;
+	top: 0;
+	max-width: 305px;
+	width: 100%;
+	height: 422px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.hero__carousel-info {
+	position: absolute;
+	top: 11%;
+	left: 10%;
+	max-width: 386px;
+	width: 100%;
+	height: 210px;
+
+}
+
+h2.hero__carouse-title {
+	font-size: 31px;
+	color: $dark;
+	font-weight: bold;
+	line-height: 34px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+p.hero__carouse-text {
+	padding-top: 5px;
+	font-size: 12px;
+	color: $gray;
+	line-height: 24px;
+	text-align: left;
+	letter-spacing: 0px;
+	margin-bottom: 38px;
+}
+.btn.btn-dark.hero-btn-dark{
+	max-width: 115px;
+	height: 40px;
+	width: 100%;
+	font-size: 13px;
+  color: $body;
+  line-height: 19px;
+	text-align: center;
+	background-color: $dark;
+	border-radius: 0;
+	margin-right: 10px;
+}
+.btn.btn-light.hero-btn-light{
+  font-size: 13px;
+  	max-width: 115px;
+	height: 40px;
+	width: 100%;
+	background-color: $body;
+  color:$black;
+  line-height: 19px;
+	text-align: center;
+	border-radius: 0;
+	border: solid 1px $dark;
+}

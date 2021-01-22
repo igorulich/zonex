@@ -1,0 +1,177 @@
+.catalog-filter {
+	max-width: 290px;
+	height: 800px;
+}
+
+.container.catalog-filter__container {
+	padding: 0;
+	position: relative;
+}
+
+span.filter-open {
+	position: relative;
+	top: -20px;
+	left: 0;
+	cursor: pointer;
+	z-index: 107;
+	color: $dark;
+	padding: 0px 5px;
+}
+
+a.closebtn.exid {
+	position: relative;
+	top: 0px;
+	left: 0;
+	z-index: 106;
+	color: $lgray;
+	padding: 0px 5px;
+	text-decoration: none;
+	transition: all.06s linear;
+	opacity: 0.5;
+}
+
+.sidenav a:hover {
+	color: $dark;
+}
+
+.catalog-filter__content {
+	position: relative;
+	top: 0;
+	left: 0;
+	min-height: 500px;
+}
+
+h2.catalog-filter__title {
+	position: relative;
+	top: 0;
+	left: 0;
+	font-size: 10px;
+	color: $dark;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 19px;
+	text-align: left;
+	padding: 20px 10px 0px 30px;
+	white-space: nowrap;
+}
+
+.catalog-filter__text h3{
+	position: relative;
+	top: 0;
+	left: 0;
+	font-size: 13px;
+	font-family: "Jost";
+	color: $dark;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 19px;
+	font-weight: 500;
+
+
+span.circl{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: $dark;
+	color:$white;
+	text-align: center;
+}
+}
+
+.Categories {
+	font-size: 13px;
+	color: $dark;
+	text-transform: uppercase;
+	line-height: 19px;
+}
+
+.accordion {
+	color: $gray;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+}
+
+.accordion:after {
+	position: absolute;
+	top: 36%;
+	right: 22%;
+	content: "\02795";
+	/* Unicode character for "plus" sign (+) */
+	font-size: 11px;
+	color: $glass;
+	float: right;
+	margin-left: 5px;
+	font-weight: 100;
+}
+
+.active:after {
+	content: "\2796";
+	/* Unicode character for "minus" sign (-) */
+}
+
+.accordion.catalog-filter__text {
+	position: relative;
+	top: 0;
+	left: 0;
+	background-color: $body;
+}
+
+p.panel-checkbox {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+ul.catalog-filter__items {
+	columns: 2;
+}
+
+li.catalog-filter__item {
+	display: block;
+	margin-bottom: 0px;
+}
+label.custom-checkbox {
+	display: flex;
+	align-items: center;
+}
+.custom-checkbox__text {
+	white-space: nowrap;
+	padding: 0px 0px 0px 5px;
+}
+
+.custom-checkbox {
+	display: inline-block;
+	cursor: pointer;
+	user-select: none;
+	color: $lgray;
+
+	&__input {
+		&:checked + span {
+			color: $dark;
+
+			&::before {
+				border-color: $dark;
+			}
+
+			&::after {
+				color: $dark;
+			}
+		}
+	}
+}
+ul.catalog-filter__items.discount {
+	columns: 1;
+}

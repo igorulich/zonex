@@ -1,0 +1,241 @@
+footer.footer {
+	position: relative;
+	left: 0;
+	top: 0;
+	max-width: 1920px;
+	width: 100%;
+	height: 400px;
+}
+
+.footer__container {
+	position: absolute;
+		max-width: 1920px;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 0px 220px;
+}
+
+.row.footer-top {
+	display: flex;
+	justify-content: space-between;
+	position: static;
+	top: 20px;
+	left: 0;
+	width: 100%;
+	height: 310px;
+	padding-top: 80px;
+}
+.item{
+	position: relative;
+	top: 0;
+	left: 0;
+
+}
+h3.top-content__title{
+	position: absolute;
+	top: 0;
+	left: 0;
+	white-space: nowrap;
+	font-size: 16px;
+  color: $dark;
+  font-weight: bold;
+  text-transform: uppercase;
+	text-align: left;
+
+}
+ul.top-content__list{
+	position: relative;
+	top: 50px;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+}
+li.content__link{
+	padding: 0px 0px 8px 0px;
+
+}
+.footer-link__phone{
+position: inherit;
+top: 0;
+left: 0;
+}
+a.footer-link{
+  font-size: 13px;
+	color: $gray;
+		text-decoration: none;
+		cursor: pointer;
+		border-bottom: solid 2px;
+		transition: all 0.6s linear;
+		border-color: transparent;
+}
+a.footer-link:hover{
+  font-size: 13px;
+	color: $gray;
+		text-decoration: none;
+		cursor: pointer;
+		border-bottom: solid 2px;
+		transition: all 0.6s linear;
+		border-color: $lgray;
+}
+p.top-content__title{
+	position: relative;
+	top: 25px;
+	left: 0;
+	padding: 20px 0px;
+  font-size: 13px;
+  color: $gray
+}
+form.footer-form{
+	position: relative;
+	top: 0;
+	left: 0;
+	border-bottom: solid 2px $dark;
+display: flex;
+}
+legend.footer-form__text{
+	position:absolute;
+	bottom: 0;
+	left: 0;
+  font-size: 13px;
+	color: $lgray;
+	z-index: 100;
+}
+.footer-form__input{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 101;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+.footer-form__btn{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+  font-size: 13px;
+  font-family: "Jost";
+	color:$dark;
+	background-color: transparent;
+	border: none;
+	transition: all 0.6s linear;
+}
+.footer-form__btn:hover{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+  font-size: 13px;
+  font-family: "Jost";
+	color:$dark;
+	background-color: $glass;
+	border: none;
+}
+span.footer-form__span{
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+  font-size: 13px;
+  color: $gray;
+	line-height: 24px;
+	letter-spacing: 1px;
+}
+.row.footer-bottom{
+	position: relative;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+}
+ul.footer-bottom__list{
+position: inherit;
+bottom: 0;
+left: 0;
+display: flex;
+flex-direction: row;
+}
+li.list-link{
+position: relative;
+top: 0;
+left: 0;
+padding: 25px 9px;
+}
+a.bottom-link{
+	position: inherit;
+	top: 0;
+	left: 0;
+  font-size: 11px;
+  color: $dark;
+  font-weight: bold;
+	letter-spacing: 0.6px;
+	white-space: nowrap;
+	text-decoration: none;
+	border-bottom: solid 2px transparent;
+	transition: all 0.6s linear;
+}
+a.bottom-link:hover{
+	position: inherit;
+	top: 0;
+	left: 0;
+  font-size: 11px;
+  color: $dark;
+  font-weight: bold;
+	letter-spacing: 0.6px;
+	white-space: nowrap;
+	text-decoration: none;
+	border-bottom: solid 2px $dark;
+}
+.footer-bottom__soc-icons{
+	position: inherit;
+bottom: 0;
+left: 0;
+display: flex;
+flex-direction: row;
+	padding: 20px 0px 0px 0px;
+}
+svg.bottom__soc-icons{
+	position: relative;
+	top: 0;
+	left: 0;
+		width: 21px;
+	height: 21px;
+}
+use .soc-icons__pinterest,
+use .soc-icons__instagram,
+use.soc-icons__facebook,
+use.soc-icons__twitter{
+	position: absolute;
+	top: 0;
+	left: 0;
+	fill: $dark;
+
+}
+	a.footer__logo--pinterest,
+	a.footer__logo--instagram,
+	a.footer__logo--facebook,
+a.footer__logo--twitter{
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+padding: 0px 8px;
+}
+	a.footer__logo--pinterest:hover,
+	a.footer__logo--instagram:hover,
+	a.footer__logo--facebook:hover,
+a.footer__logo--twitter:hover{
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+padding: 0px 8px;
+opacity: 0.5;
+}
